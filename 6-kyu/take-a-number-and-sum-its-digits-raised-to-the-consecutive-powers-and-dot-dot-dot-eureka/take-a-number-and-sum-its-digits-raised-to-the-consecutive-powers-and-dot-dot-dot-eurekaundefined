@@ -1,0 +1,13 @@
+def sum_dig_pow(a, b): # range(a, b + 1) will be studied by the function
+    sum = []
+    for number in range(a, b+1):
+        splitNum = list(str(number))
+        total = 0
+        exp = 1
+        for num in splitNum:
+            total += int(num)**exp
+            exp += 1
+        if total == number:
+            sum.append(number)
+            
+    return sum
