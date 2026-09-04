@@ -9,5 +9,4 @@ def first_non_repeating_letter(s):
             else:
                 first = key.upper()
             break
-    print(countText)
     return first
